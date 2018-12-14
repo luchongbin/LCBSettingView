@@ -1,5 +1,7 @@
 # LCBSettingView
 常用的设置界面（主要是有多行相同差不多的布局），方便以后使用
+## 效果图 
+![效果图](https://github.com/luchongbin/LCBSettingView/blob/master/gif/gif.gif)
 ## 使用前准备  
 1、Add it in your root build.gradle at the end of repositories:  
 ```
