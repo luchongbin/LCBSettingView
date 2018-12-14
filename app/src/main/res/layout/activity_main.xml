@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lcb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="16dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/headimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_head"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="王二麻子"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lcb:isShowRightText="true"
+        lcb:leftIconSize="36dp"
+        lcb:leftText="我的name"
+        lcb:leftTextMarginLeft="30dp"
+        lcb:rightText="99+"
+        lcb:rightTextColor="@color/gray"
+        lcb:rightTextSize="14"/>
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lcb:isShowRightText="true"
+        lcb:leftIcon="@mipmap/up_address"
+        lcb:leftText="版本"
+        lcb:rightText="V1.0.0"
+        lcb:rightTextColor="@color/colorPrimary"
+        lcb:LtextSize="20"/>
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lcb:leftIcon="@mipmap/up_address"
+        lcb:leftText="我的动画"
+        lcb:rightStyle="iconHide"/>
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:id="@+id/item_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        lcb:leftIcon="@mipmap/up_address"
+        lcb:leftText="我的宠物"
+        lcb:rightStyle="iconCheck"/>
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:id="@+id/item_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        lcb:isShowUnderLine="false"
+        lcb:leftIcon="@mipmap/up_address"
+        lcb:leftText="我的家园"
+        lcb:rightStyle="iconSwitch"/>
+
+    <com.luchongbin.lcbsettingviewlibrary.LCBSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        lcb:isShowUnderLine="false"
+        lcb:leftText="不显示底线线"
+        lcb:rightStyle="iconSwitch"/>
+</LinearLayout>
